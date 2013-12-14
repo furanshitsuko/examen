@@ -19,6 +19,13 @@ class HomeController extends AppController {
     parent::beforeFilter();
     $this->Auth->allow('index');
   }
+  public function view($id = null) {
+		if (!$this->Project->exists($id)) {
+			throw new NotFoundException(__('Invalid project'));
+		}
+		$options = array('conditions' => array('Project.' . $this->Project->primaryKey => $id));
+		$this->set('project', $this->Project->find('first', $options));
+	}
 
   public function index() {
     

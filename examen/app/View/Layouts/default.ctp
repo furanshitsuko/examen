@@ -22,58 +22,68 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <!DOCTYPE html>
 <html>
 <head>
-	
+        
 
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
+        <?php echo $this->Html->charset(); ?>
+<title>
+                <?php echo $cakeDescription ?>:
+                <?php echo $title_for_layout; ?>
+        </title>
+        <?php
+                echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
-		echo $this->Html->css('app');
+                echo $this->Html->css('cake.generic');
+                echo $this->Html->css('app');
 
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
-</head>
-<body>
-	<style type="text/css">
-body {
-	background-color: #060;
+                echo $this->fetch('meta');
+                echo $this->fetch('css');
+                echo $this->fetch('script');
+        ?>
+<style type="text/css">
+#container {
+	color: #09F;
+}
+.skyblue {
+	color: #39C;
 }
 </style>
-	<div id="container">
-		<div id="header">
-			<strong><?php echo $this->Html->link("My CakePHP Application", ''); ?></strong>
-			<div class="right padding-right-10">
-				<?php if(AuthComponent::user('id')): ?>
-					<?php echo $this->Html->link(__('Profile'), array('controller' => 'users', 'action' => 'profile')); ?> |
-			  	<?php echo $this->Html->link(__('Logout'), array('controller' => 'users', 'action' => 'logout')); ?>
-			  <?php else: ?>
-			  	<?php echo $this->Html->link(__('Sign in'), array('controller' => 'users', 'action' => 'login')); ?> | 
-			    <?php echo $this->Html->link(__('Sign up'), array('controller' => 'users', 'action' => 'register')); ?>
-			  <?php endif; ?>
-			</div>
-		</div>
-		<div id="content">
+<meta charset="utf-8">
+</head>
+<body bgcolor="#00FFCC" text="#CCFF66" link="#990000" vlink="#990099" alink="#FF0000">
+        <style type="text/css">
+body {
+        background-color: #060;
+}
+</style>
+<div id="container">
+                <div id="header">
+                        <strong><?php echo $this->Html->link("My CakePHP Application", ''); ?></strong>
+                        <div class="right padding-right-10">
+                                <?php if(AuthComponent::user('id')): ?>
+                                        <?php echo $this->Html->link(__('Profile'), array('controller' => 'users', 'action' => 'profile')); ?> |
+                                  <?php echo $this->Html->link(__('Logout'), array('controller' => 'users', 'action' => 'logout')); ?>
+                          <?php else: ?>
+                                  <?php echo $this->Html->link(__('Sign in'), array('controller' => 'users', 'action' => 'login')); ?> | 
+                            <?php echo $this->Html->link(__('Sign up'), array('controller' => 'users', 'action' => 'register')); ?>
+                          <?php endif; ?>
+                        </div>
+                </div>
+                <div id="content">
 
-			<?php echo $this->Session->flash(); ?>
-			<?php echo $this->Session->flash('auth'); ?>
+                        <?php echo $this->Session->flash(); ?>
+                        <?php echo $this->Session->flash('auth'); ?>
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					
-					'http://luppi-no.tumblr.com',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
+                        <?php echo $this->fetch('content'); ?>
+                </div>
+                <div id="footer">
+                        <?php echo $this->Html->link(
+                                        
+                                        'http://luppi-no.tumblr.com',
+                                        array('target' => '_blank', 'escape' => false)
+                                );
+                        ?>
+                </div>
+        </div>
+<p class="skyblue">&nbsp;</p>
 </body>
 </html>

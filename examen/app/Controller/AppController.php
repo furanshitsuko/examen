@@ -63,7 +63,9 @@ class AppController extends Controller {
       'authorize' => 'controller'
     )
   );
-
+  
+	public $helpers = array('Form' => array('Foundation.FoundationForm'));
+	
   function beforeFilter() {
   }
 

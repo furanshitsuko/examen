@@ -1,4 +1,5 @@
 <div class="users view">
+<div align="left"><a href="home">Home</a></div>
 <h2><?php echo __('User'); ?></h2>
 	<dl>
 		<dt><?php echo __('Email'); ?></dt>
