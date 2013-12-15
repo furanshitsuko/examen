@@ -417,15 +417,19 @@
     </div>
     <div class="outer_content">
       <div class="content">
-        <div class="date"><a href="users/login">Login</a><a href="projects"> Projects  </a><a href="users/profile">Profile</a></div>
+        
+		<button type="button" class="btn btn-warning"><a href="users/login">Login</a></button>  <button type="button" class="btn btn-info"><a href="users/register">Register</a></button>  <button type="button" class="btn btn-primary"><a href="projects">Projects</a></button>  <button type="button" class="btn btn-danger"><a href="users/profile">Profile</a></button>
 </div>
     </div>
     <div class="outer_content">
       <div class="content">
           <div class="post">
 		  
+		  <div class="projects index">
 		  
 		  <td><?php echo h($project['Project']['name']); ?>&nbsp;</td>
+		  
+		  </div>
 		    
 		  </div>
           <div class="regular bodypart"><h2>&nbsp;</h2>
@@ -446,7 +450,7 @@
     <div class="outer_content">
       <div class="content">
         <div id="footer">
-		<iframe width="480" height="300" src="//www.youtube.com/embed/J1X243bq-ho" frameborder="0" allowfullscreen></iframe>
+		<iframe width="480" height="300" src="//www.youtube.com/embed/UOzPMwINh24" frameborder="0" allowfullscreen></iframe>
 		</div>
       </div>
     </div>

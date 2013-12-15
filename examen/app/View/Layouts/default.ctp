@@ -33,7 +33,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         <?php
                 echo $this->Html->meta('icon');
 
-                echo $this->Html->css('cake.generic');
+                echo $this->Html->css('bootstrap.min');
                 echo $this->Html->css('app');
 
                 echo $this->fetch('meta');
@@ -42,18 +42,18 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         ?>
 <style type="text/css">
 #container {
-	color: #09F;
+	color: #000000;
 }
 .skyblue {
-	color: #39C;
+	color: #000000;
 }
 </style>
 <meta charset="utf-8">
 </head>
-<body bgcolor="#00FFCC" text="#CCFF66" link="#990000" vlink="#990099" alink="#FF0000">
+<body bgcolor="#000000" text="#000000" link="#000000" vlink="#000000" alink="#000000">
         <style type="text/css">
 body {
-        background-color: #060;
+        background-color: #6E6E6E;
 }
 </style>
 <div id="container">

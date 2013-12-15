@@ -14,6 +14,11 @@ class UsersController extends AppController {
  *
  * @var array
  */
+	public function index() {
+		$this->Project->recursive = 0;
+		$this->set('projects', $this->Paginator->paginate());
+	}
+	
 	public $components = array('Paginator');
 
 	public function beforeFilter() {
