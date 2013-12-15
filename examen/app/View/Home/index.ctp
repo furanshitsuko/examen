@@ -1,3 +1,4 @@
+<h5></h5>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -421,7 +422,12 @@
     </div>
     <div class="outer_content">
       <div class="content">
-          <div class="post"></div>
+          <div class="post">
+		  
+		  
+		  <td><?php echo h($project['Project']['name']); ?>&nbsp;</td>
+		    
+		  </div>
           <div class="regular bodypart"><h2>&nbsp;</h2>
         </div>
             <div class="conversation bodypart">              </div>
@@ -430,12 +436,18 @@
       </div>
       <div class="outer_content">
         <div class="content">
-            <div class="post"></div>
+            <div class="post">
+			
+				
+			
+			</div>
         </div>
 </div>
     <div class="outer_content">
       <div class="content">
-        <div id="footer"></div>
+        <div id="footer">
+		<iframe width="480" height="300" src="//www.youtube.com/embed/J1X243bq-ho" frameborder="0" allowfullscreen></iframe>
+		</div>
       </div>
     </div>
     <!-- don't remove this -->
